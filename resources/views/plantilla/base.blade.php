@@ -22,10 +22,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="{{ route('oper') }}">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Suma</a>
+          <a class="nav-link" href="{{ route('suma') }}">Suma</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Resta</a>
@@ -41,7 +41,7 @@
   </div>
 </nav>
 <div class="container-fluid bg-blue-100">
-<div class="mt-10 max-w-2xl mx-auto shadow bg-white p-5 text-base">
+<div class="shadow bg-white p-2 text-base">
     <!--Fin del menu-->
 
        @yield('content')

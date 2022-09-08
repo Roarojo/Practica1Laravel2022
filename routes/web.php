@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SumaContoller;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('suma');
-});
+    return view('datos');
+})->name('oper');
+
+
+Route::get('suma',[SumaContoller::class,'vistaSuma'])->name('suma');
+
+Route::post('suma', [SumaContoller::class,'mostrarDatos'])->name('suma');
