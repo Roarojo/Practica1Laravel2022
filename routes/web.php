@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\RestaContoller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SumaContoller;
+use App\Http\Controllers\MultiplicacionContoller;
+use App\Http\Controllers\DivisionContoller;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +23,13 @@ Route::get('/', function () {
 })->name('oper');
 
 
-Route::get('suma',[SumaContoller::class,'vistaSuma'])->name('suma');
+Route::get('formularios.resta',[RestaContoller::class,'vistaResta'])->name('resta');
 
-Route::post('suma', [SumaContoller::class,'mostrarDatos'])->name('suma');
+Route::get('formularios.multiplicacion',[MultiplicacionContoller::class,'vistaMultiplicacion'])->name('multiplicacion');
+
+Route::get('formularios.division',[DivisionContoller::class,'vistaDivision'])->name('division');
+
+
+Route::get('formularios.suma',[SumaContoller::class,'vistaSuma'])->name('suma');//ruta para conexion a otro php
+
+Route::post('formularios.suma', [SumaContoller::class,'mostrarDatos'])->name('suma');

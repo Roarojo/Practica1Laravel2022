@@ -28,13 +28,13 @@
           <a class="nav-link" href="{{ route('suma') }}">Suma</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resta</a>
+          <a class="nav-link" href="{{ route('resta') }}">Resta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Multiplicacion</a>
+          <a class="nav-link" href="{{ route('multiplicacion') }}">Multiplicacion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Division</a>
+          <a class="nav-link" href="{{ route('division') }}">Division</a>
         </li>
       </ul>
     </div>

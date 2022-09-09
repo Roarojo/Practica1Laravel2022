@@ -19,6 +19,6 @@ class SumaContoller extends Controller
      }
 
     public function vistaSuma(){
-        return view('suma');
+        return view('formularios.suma');
      }
 }
