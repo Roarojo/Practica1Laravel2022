@@ -24,6 +24,8 @@ Route::get('/', function () {
 
 
 Route::get('formularios.resta',[RestaContoller::class,'vistaResta'])->name('resta');
+Route::post('formularios.resta', [RestaContoller::class,'mostrarResta'])->name('resta');
+
 
 Route::get('formularios.multiplicacion',[MultiplicacionContoller::class,'vistaMultiplicacion'])->name('multiplicacion');
 

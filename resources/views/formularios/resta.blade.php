@@ -13,7 +13,7 @@
               <div class="card shadow-2-strong" style="border-radius: 1rem;">
                 <div class="card-body p-5 text-center">
                   <h3 class="mb-5">Operacion Suma</h3>
-                  <form action="{{route('suma')}}" method="POST">
+                  <form action="{{route('resta')}}" method="POST">
                       @csrf  <!-- esto es requerido por seguridad en LARAVLE-->
                         <!-- 
                             ahora para mostrar mensajes en la pagina del formulario
